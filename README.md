@@ -21,7 +21,12 @@ Implementation of an example use of the D-Wave Leap Quantum Computing API.
 
 ## Setup
 
-1. Create and activate a virtual environment.
+1. Create and activate a virtual environment:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
 2. Install dependencies:
 
 ```bash
@@ -34,13 +39,13 @@ pip install -r requirements.txt
 export DWAVE_API_TOKEN="your-token-here"
 ```
 
-Alternatively, copy `config/dwave.conf.example` to `~/.config/dwave/dwave.conf` and
-fill in your token.
+Alternatively, copy `config/dwave.conf.example` to `config/dwave.conf` and fill in
+your token.
 
 ## Run the example
 
 ```bash
-python src/sample_problem.py
+python -m src.sample_problem
 ```
 
 Or use the helper script:
@@ -52,5 +57,5 @@ scripts/run_example.sh
 Optional flags:
 
 ```bash
-python src/sample_problem.py --solver "Advantage_system6.1" --num-reads 200
+python -m src.sample_problem --solver "Advantage_system6.1" --num-reads 200
 ```

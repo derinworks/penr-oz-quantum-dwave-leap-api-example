@@ -6,7 +6,7 @@ import argparse
 
 import dimod
 
-from src.solvers import get_sampler
+from .solvers import get_sampler
 
 
 DEFAULT_NUM_READS = 100
