@@ -1,0 +1,5 @@
+[defaults]
+# Replace with your Leap token or set DWAVE_API_TOKEN in the environment.
+# token = YOUR_TOKEN_HERE
+# solver = Advantage_system6.1
+# endpoint = https://cloud.dwavesys.com/sapi
